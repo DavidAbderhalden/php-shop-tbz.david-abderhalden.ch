@@ -12,7 +12,7 @@ jobs:
     - name: 📂 Upload to FTP
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        local-dir: ./
+        local-dir: ./src/
         state-name: .htautodeploystate
         server: sl1066.web.hostpoint.ch
         port: 21
