@@ -9,8 +9,9 @@ jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
-    - name: 📂 Upload to FTP
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+    steps:
+    - uses: actions/checkout@v2.3.2
+    - uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         local-dir: ./src/
         state-name: .htautodeploystate
